@@ -1,71 +1,78 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-*{
-    font-family: "Inter", sans-serif;
-    scroll-behavior: smooth;
+
+* {
+  font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
 }
 
+/* =======image slider====== */
 @keyframes slide-left {
-    0% {
-      transform: translateX(50%);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
+  0% {
+    transform: translateX(50%);
   }
 
-  
-
-  .slider {
-    display: inline-flex;
-    width: auto;
-    animation: slide-left 20s linear infinite;
+  100% {
+    transform: translateX(-100%);
   }
+}
 
-  .accordionInfo {
-    max-height: 0;
-    overflow: hidden;
-  }
 
-  .active .arrow {
-    transform: rotate(180deg);
-  }
-  .active .accordionInfo{
-    max-height: 200px;
-    margin-top: 10px;
-  }
+.slider {
+  display: inline-flex;
+  width: auto;
+  animation: slide-left 20s linear infinite;
+}
 
+/*==============accordion========== */
+
+.accordionInfo {
+  max-height: 0;
+  overflow: hidden;
+}
+
+.active .arrow {
+  transform: rotate(180deg);
+}
+
+.active .accordionInfo {
+  max-height: 200px;
+  margin-top: 10px;
+}
+
+/* ===============tabs=============== */
+.tabs {
+  padding: 17px 28px;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 100%;
+  background-color: #00afe1;
+  border-radius: 62px;
+  border: 1px solid transparent;
+  transition: all 300ms linear;
+}
+
+.tabs:hover {
+  border: 1px solid #00afe1;
+  background-color: transparent;
+  color: #00afe1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00AFE1;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+  height: 4px;
+  width: 8px;
+}
+
+/* =================responsive=============== */
+@media (max-width: 768.98px) {
   .tabs {
-    padding: 17px 28px;
-    color: white;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 100%;
-    background-color: #00afe1;
-    border-radius: 62px;
-    border: 1px solid transparent;
-    transition: all 300ms linear;
+    padding: 12px 20px;
+    font-size: 14px;
+    text-wrap: nowrap;
   }
-  
-  .tabs:hover {
-    border: 1px solid #00afe1;
-    background-color: transparent;
-    color: #00afe1;
-  }
-
-  ::-webkit-scrollbar-thumb {
-    background: #00AFE1; 
-    border-radius: 10px;
-  }
-
-  ::-webkit-scrollbar {
-    height: 4px;
-    width: 8px;
-  }
-
-  @media (max-width: 768.98px) {
-    .tabs {
-      padding: 12px 20px;
-      font-size: 14px;
-      text-wrap: nowrap;
-    }
-  }
+}
