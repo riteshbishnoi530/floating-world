@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+*{
+    font-family: "Inter", sans-serif;
+}
+
+@keyframes slide-left {
+    0% {
+      transform: translateX(75%);
+    }
+    100% {
+      transform: translateX(-75%);
+    }
+  }
+
+  .slider {
+    display: inline-flex;
+    width: auto;
+    animation: slide-left 20s linear infinite;
+  }
+
+  .d-none {
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  .active .arrow {
+    transform: rotate(180deg);
+  }
+  .active .accordionInfo{
+    max-height: 200px;
+  }
