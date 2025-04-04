@@ -21,19 +21,19 @@ const swiper = new Swiper(".swiper", {
     },
     centerSlides: true,
     breakpoints: {
-        1441: {
+        1440.98: {
             slidesPerView: 3.4,
         },
-        1025: {
+        1024.98: {
             slidesPerView: 3,
         },
-        769: {
+        768.98: {
             slidesPerView: 2.5,
         },
-        600: {
+        640.98: {
             slidesPerView: 2,
         },
-        320: {
+        300: {
             slidesPerView: 1.5,
         },
     },
