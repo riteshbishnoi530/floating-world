@@ -30,13 +30,12 @@
   overflow: hidden;
 }
 
-.active .arrow {
-  transform: rotate(180deg);
-}
-
 .active .accordionInfo {
   max-height: 200px;
-  margin-top: 10px;
+}
+
+.active .arrow {
+  transform: rotate(180deg);
 }
 
 /* ===============tabs=============== */
