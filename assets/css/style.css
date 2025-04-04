@@ -50,6 +50,7 @@
   border: 1px solid transparent;
   transition: all 300ms linear;
   cursor:  pointer !important;
+  text-wrap: nowrap;
 }
 
 .tabs:hover {

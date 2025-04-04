@@ -79,3 +79,9 @@ function moveBlueBtn(direction) {
         blueBtn.style.transform = "translateX(98%)";
     }
 }
+
+// Back to top
+let backTopBtn = document.querySelector(".back-top-btn");
+
+backTopBtn.onclick = () => window.scrollTo({ top: 0, behavior: "smooth" });
+window.onscroll = () => (backTopBtn.style.opacity = window.scrollY > 150 ? 1 : 0);
